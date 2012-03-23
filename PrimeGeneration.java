@@ -6,16 +6,10 @@ public class PrimeGeneration {
 		
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		
-		if(i > 2){
-			list.add(2);
-		}
-		
-		if(i > 3){
-			list.add(3);
-		}
-		
-		if(i > 5){
-			list.add(5);
+		for(int j = 2; j < i; j++){
+			if(PrimeFactorization.getPrimeFactors(j).size() == 1){
+				list.add(j);
+			}
 		}
 		
 		return list;
