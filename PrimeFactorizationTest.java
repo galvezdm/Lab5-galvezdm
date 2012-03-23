@@ -36,4 +36,12 @@ public class PrimeFactorizationTest {
 		outcome.add(2);
 		assertEquals(PrimeFactorization.getPrimeFactors(4), outcome);
 	}
+	
+	@Test
+	public void testPrimeFactoringFor6(){
+		ArrayList<Integer> outcome = new ArrayList<Integer>();
+		outcome.add(2);
+		outcome.add(3);
+		assertEquals(PrimeFactorization.getPrimeFactors(6), outcome);
+	}
 }
