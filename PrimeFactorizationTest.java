@@ -21,4 +21,11 @@ public class PrimeFactorizationTest {
 		outcome.add(2);
 		assertEquals(PrimeFactorization.getPrimeFactors(2), outcome);
 	}
+	
+	@Test
+	public void testPrimeFactoringFor3(){
+		ArrayList<Integer> outcome = new ArrayList<Integer>();
+		outcome.add(3);
+		assertEquals(PrimeFactorization.getPrimeFactors(3), outcome);
+	}
 }
