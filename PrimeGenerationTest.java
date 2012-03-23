@@ -26,6 +26,11 @@ public class PrimeGenerationTest {
 		assertEquals(PrimeGeneration.getAllSmallerPrimes(3), quickList(2));
 	}
 	
+	@Test
+	public void testPrimeGenerationFor5(){
+		assertEquals(PrimeGeneration.getAllSmallerPrimes(5), quickList(2,3));
+	}
+	
 	private ArrayList<Integer> quickList(int...ints){
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		for (int i : ints){
