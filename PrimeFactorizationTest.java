@@ -28,4 +28,12 @@ public class PrimeFactorizationTest {
 		outcome.add(3);
 		assertEquals(PrimeFactorization.getPrimeFactors(3), outcome);
 	}
+	
+	@Test
+	public void testPrimeFactoringFor4(){
+		ArrayList<Integer> outcome = new ArrayList<Integer>();
+		outcome.add(2);
+		outcome.add(2);
+		assertEquals(PrimeFactorization.getPrimeFactors(4), outcome);
+	}
 }
