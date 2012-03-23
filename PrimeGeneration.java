@@ -4,6 +4,12 @@ import java.util.ArrayList;
 public class PrimeGeneration {
 	public static ArrayList<Integer> getAllSmallerPrimes(int i) {
 		
-		return new ArrayList<Integer>();
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		
+		if(i > 2){
+			list.add(2);
+		}
+		
+		return list;
 	}
 }

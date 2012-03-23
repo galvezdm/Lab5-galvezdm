@@ -13,11 +13,24 @@ public class PrimeGenerationTest {
 	
 	@Test
 	public void testPrimeGenerationFor1(){
-		assertEquals(PrimeGeneration.getAllSmallerPrimes(1), new ArrayList<Integer>());
+		assertEquals(PrimeGeneration.getAllSmallerPrimes(1), quickList());
 	}
 
 	@Test
 	public void testPrimeGenerationFor2(){
-		assertEquals(PrimeGeneration.getAllSmallerPrimes(2), new ArrayList<Integer>());
+		assertEquals(PrimeGeneration.getAllSmallerPrimes(2), quickList());
+	}
+	
+	@Test
+	public void testPrimeGenerationFor3(){
+		assertEquals(PrimeGeneration.getAllSmallerPrimes(3), quickList(2));
+	}
+	
+	private ArrayList<Integer> quickList(int...ints){
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		for (int i : ints){
+			list.add(i);
+		}
+		return list;
 	}
 }
