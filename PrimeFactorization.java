@@ -7,17 +7,12 @@ public class PrimeFactorization {
 		
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		
-		while(i > 0){
-			if (i%2 == 0){
-				list.add(2);
-				i /= 2;
-			}else{
-				break;
-			}
-		}
+		for(int j = 2; i > 1; j++){
 		
-		if (i%3 == 0){
-			list.add(3);
+			while(i % j == 0){
+				list.add(j);
+				i /= j;
+			}
 		}
 		
 		return list;

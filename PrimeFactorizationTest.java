@@ -47,7 +47,7 @@ public class PrimeFactorizationTest {
 	
 	@Test
 	public void testPrimeFactoringFor325115(){
-		assertEquals(PrimeFactorization.getPrimeFactors(325115), quickList(5,5,7,1327));
+		assertEquals(PrimeFactorization.getPrimeFactors(325115), quickList(5,7,7,1327));
 	}
 	
 	private ArrayList<Integer> quickList(int...ints){
