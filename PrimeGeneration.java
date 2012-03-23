@@ -14,6 +14,10 @@ public class PrimeGeneration {
 			list.add(3);
 		}
 		
+		if(i > 5){
+			list.add(5);
+		}
+		
 		return list;
 	}
 }
